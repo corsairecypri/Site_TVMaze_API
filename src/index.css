@@ -1,0 +1,975 @@
+* {
+  margin: 0;
+}
+
+/*Import des polices avec "la 2ème option d'importation de Google Font (le bouton @import)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+
+
+
+/*-------------------------------------
+Le header
+--------------------------------------*/
+
+
+header {
+  display: flex;
+  flex: row nowrap;
+  align-items: center;
+  height: min-content;
+
+  justify-content:space-around;
+
+  padding: 1rem 0px;
+  background-color:#8754DB;
+
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 10%;
+}
+
+.formSearchNavbar {
+  display: flex;
+  align-items: center;
+  
+}
+
+.searchNavbar {
+  width: 80vw;
+  height: 4vh;
+
+  border-radius: 25px;
+
+  padding-left:1.1rem;
+  
+}
+
+.searchNavbar:hover{
+  visibility: visible;
+}
+
+
+
+button{
+  background-color: transparent;
+  border: transparent;
+}
+
+.glass {
+  width: 20px;
+  height: 20px;
+
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.favorites {
+  width: 28px;
+  height: 28px;
+
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/*-------------------------------------
+ MainPageSection (la section de la page Home)
+--------------------------------------*/
+
+
+.mainPageSection{
+  width: 100vw;
+  height: fit-content;
+  margin-bottom: 4.5rem;
+}
+
+.catchphrase {
+  text-align: center;
+  font-size: 2rem;
+
+  margin-top: 5rem;
+  width: 40vw;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+  line-height: 3.2rem;
+  font-style: italic;
+  font-family: 'Armata', sans-serif;
+}
+
+.formSearchMainPage {
+  padding-top: 4rem;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchMainPage {
+  width: 40vw;
+  height: 4vh;
+  border-radius: 25px;
+  border: 1px solid black;
+
+  padding-left:1.1rem;
+}
+
+
+
+/*-------------------------------------
+  Les carousels
+--------------------------------------*/
+
+/*Le module React-responsive-carouselles possède des 
+classes préfabriquées  qui sont carousel, .thumbs et thumb*/
+
+
+.h2Carroussel {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.7rem;
+  text-decoration: underline solid #EB4CAE;
+  font-family: 'Armata', sans-serif;
+}
+
+.carouselImage2 {
+  max-width: 20vw;
+  min-width: 200px;
+}
+
+.componentCarousel {
+  width: 60vw;
+  margin: 4rem auto 0 auto;
+}
+
+
+.overlay_title, .overlay_text, .languageCarrousselInternational {
+  font-family: 'Armata', sans-serif;
+  margin: 1rem 0;
+}
+
+.languageCarrousselInternational {
+  font-size: 1.1rem;
+}
+
+.overlay_text {
+  font-size: 1.3rem;
+  text-decoration: underline solid #33b0CD;
+}
+
+
+
+/*-------------------------------------
+  La page Results
+--------------------------------------*/
+
+
+.resultsSection {
+  min-height: 60vh;
+  width: 100vw;
+  padding: 5rem 0px;
+}
+
+
+.result {
+  display: flex;
+  flex: row nowrap;
+
+  border: 3px solid #EB4CAE;
+  border-radius: 25px;
+
+  width: 80vw;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem;
+
+  margin-bottom: 6rem;
+}
+
+.divResultImage {
+  min-width: 15rem;
+  min-height: 10rem;
+}
+
+.resultImage {
+  width: 15rem;
+}
+
+.resultInfos {
+  padding: 0px 4rem;
+}
+
+.actorImage {
+  max-width: 15rem;
+}
+
+.seriesName {
+  font-family: 'Armata', sans-serif;
+  text-decoration: solid underline #33b0CD;
+  font-family: 'Armata', sans-serif;
+}
+
+.seriesSummary {
+  font-family: 'Armata', sans-serif;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+
+.buttonDetailsSeries {
+  border: 2px solid #33b0CD;
+  background-color: #33b0CD;
+  color: white;
+  
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 10px;
+
+  margin-top: 1.5rem;
+  
+  font-family: 'Armata', sans-serif;
+}
+
+/*-------------------------------------
+  La page Série
+--------------------------------------*/
+
+/* 1) Les infos de la série*/
+
+.genres {
+  
+  display: flex;
+  flex: row wrap;
+  height: min-content;
+}
+
+.genre {
+  display: flex;
+  flex: row wrap;
+  height: min-content;
+  padding-right: 2.5rem;
+  font-size: 1.2rem;
+  
+  font-family: 'Armata', sans-serif;
+}
+
+.hashtag {
+  color: #33b0CD;
+}
+
+.titreSeries {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  
+  font-family: 'Armata', sans-serif;
+}
+
+
+.ImageRecadrage {
+  margin: 1rem 0 0 1rem;
+}
+
+.ratings {
+  display: flex;
+  flex: row wrap;
+  height: min-content;
+
+  justify-content: right;
+  padding: 0.7rem 1rem 0 0;
+  
+  font-size: 1.1rem;
+
+  font-family: 'Armata', sans-serif;
+}
+
+.starRatings { color: orange; }
+
+.note { padding-left: 0.5rem; }
+
+
+.countryOfOrigine {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+  
+  font-family: 'Armata', sans-serif;
+}
+
+.firstDiffusion, .firstEpisode, .lastEpisode {
+  padding-top: 0.7rem;
+  padding-bottom: 0,7rem;
+  
+  font-family: 'Armata', sans-serif;
+}
+
+
+.FavoritesButtonToRight {
+  display: flex;
+  flex: row wrap;
+  height: min-content;
+  justify-content: right;
+
+  margin-top: 2rem;
+}
+
+.addFavoritesButton, .removeFavoritesButton {
+  display: flex;
+  flex: row nowrap;
+  align-items: center;
+  border: 2px solid #33b0CD;
+  border-radius: 10px;
+  padding: 0.6rem;
+
+  font-family: 'Armata', sans-serif;
+}
+
+
+.heart {
+  padding-left: 0.75rem;
+  font-size: 1.4rem;
+  padding-bottom: 0.2rem;
+  color: red;
+}
+
+
+/* 2) Les boutons d'affichage du casting et des saisons*/
+
+.choixInfos {
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-between;
+  border: 3px solid #8754DB;
+  border-radius: 25px;
+  padding: 2.5rem;
+
+  width: 80vw;
+  min-height: 200px;
+  height: 25vh;
+  margin: 0 auto 5rem auto;
+}
+
+.separator {
+  font-style:italic;
+  font-weight:lighter;
+  font-size: 10rem;
+  color:#33b0CD;
+}
+
+.buttonCasting {
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+
+.buttonSeasons {
+  align-self: flex-end;
+  padding-right: 2rem;
+}
+
+
+.buttonCasting, .buttonSeasons {
+  font-size: 1.5rem;
+  font-family: 'Armata', sans-serif;
+}
+
+
+/* 3) La section du casting*/
+
+
+/*gridSection à la même structure que la classe result
+à l'exeption qu'elle utilise Grid*/
+
+.gridSection {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  border: 3px solid #EB4CAE;
+  border-radius: 25px;
+
+  width: 80vw;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem;
+
+  margin-bottom: 6rem;
+}
+
+.h2Casting, .h2Seasons {
+    display: block;
+    height:min-content;
+    text-align: center;
+    margin-top:1.2rem;
+    font-size: 1.7rem;
+    text-decoration: underline solid #33b0CD;
+}
+
+.h2Casting{ margin-bottom: 2rem;}
+.h2Seasons{ margin-bottom: 6rem;}
+
+
+.actorList {
+  /*Le flex row wrap n'a mystérieusement pas marché, mais le grid  oui*/
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  
+  width: 77vw;
+  height: max-content;
+  margin: auto;
+  padding: auto; 
+}
+
+
+.actorFichette {
+
+ border: 1px solid black;
+ border-radius: 25px;
+
+ width: min-content;
+ height:min-content;
+ margin: 2rem 0px;
+
+ padding: 1rem 2rem;
+}
+
+.actorName,  .actorRole {
+ 
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+
+.actorName {
+  font-size: 1.3rem;
+}
+
+.actorRole {
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.divButtonActor {
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+}
+
+.buttonActor {
+
+  background-color: #33b0CD;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 15px;
+ 
+}
+
+/* 4) L'affchage des saisons*/
+
+.seasonNumber {
+  text-align: center;
+}
+
+.resultSeasons {
+  display: flex;
+  flex: column ;
+  margin-bottom: 5rem;
+}
+
+.h2SummarySeason {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.SummarySeason {
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+
+.h2ListEpisodes {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.episodeTitle {
+  font-size: 1.2rem;
+  
+  text-decoration: underline solid black;
+  margin-top: 1.5rem;
+}
+
+
+.boutonMenuDeroulant {
+  display: flex;
+  flex: row nowrap;
+
+  align-items: center;
+
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: #E3E3E3;
+
+  margin-left: 3rem;
+
+  min-width: 30vw;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.seasonNumber {
+  text-align: center;
+  margin: auto;
+  font-size: 1.7rem;
+  text-decoration: underline solid #8754DB;
+}
+
+.flecheMenuDeroulant {
+  justify-content: right;
+  width: 2rem;
+  height: auto;
+}
+
+
+.InfosSeason {
+  display: none;
+}
+
+.toggle:checked + .InfosSeason {
+    display: inline-block;
+}
+
+.sectionCasting, .sectionSeasons {
+  display: none;
+}
+
+
+/*---------------------------------
+    Page Acteur
+----------------------------------*/
+
+.presentationActor {
+  display: flex;
+  flex: row nowrap;
+  border: 3px solid #33b0CD;
+  border-radius: 35px;
+  width: min-content;
+  margin: 4rem auto 5rem auto;
+  padding: 1rem;
+}
+
+.divActorImage {
+  width: min-content;
+  border: 1px solid black;
+}
+
+.actorInfo {
+  width: 26vw;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.actorName {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 0 0.7rem 0;
+  text-decoration: underline solid #33b0CD;
+}
+
+.actorCountry, .actorGender, .actorBirthday, .actorDeathday {
+  margin: 1rem 0 0.5rem 1rem;
+}
+
+.h2ActorRoles {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+.actorResultSection {
+    margin: 9rem auto;
+}
+
+
+/*Ces classes là ont été créées dans les composants InfosRoles et InfosSeries*/
+
+
+.divInfosSeriesComponent {
+  display: flex;
+  flex: row nowrap;
+  border: 1px solid black;
+  border-radius: 10px; 
+}
+
+.divImageSeriesComponent {
+  width: min-content;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.infosRoleComponent {
+  border: 1px solid black;
+  width: min-content;
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 10px;
+}
+
+
+.roleLineComponent, .seriesLineComponent {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.6rem;
+  line-height: 1.5rem;
+}
+
+.seriesNameComponent {
+  font-size: 1.3rem;
+  text-decoration: underline solid #EB4CAE;
+}
+
+.h3SeriesInfoComponent {
+  margin: 2rem 0 2rem 2rem;
+  font-size: 1.4rem;
+  text-decoration: underline solid #33b0CD;
+}
+
+.premiereSeriesComponent, .endSeriesComponent, .summarySeriesComponent, .genresComponent {
+  font-size: 1.2rem;
+  margin: 1.2rem 0 1.2rem 2rem;
+}
+
+.summarySeriesComponent {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  padding-right: 2rem;
+}
+
+.buttonInfosSeriesComponent {
+  margin: 0.7rem 0 1.8rem 2rem;
+}
+
+/*-------------------------------------
+  La page favoris
+--------------------------------------*/
+
+.favoritesMarginTop {
+  margin-top: 3.5rem;
+}
+
+/*-------------------------------------
+  Le footer
+--------------------------------------*/
+
+footer {
+  border: 2px solid #8754DB;
+  background-color: #8754DB;
+  padding: 2.5rem 1.3rem;
+
+  color: white;
+  font-size: 1rem;
+  font-family: 'Armata', sans-serif;
+}
+ 
+/*---------------------------------------------------------------
+            Les media querries
+---------------------------------------------------------------*/
+
+/*
+    Note importante :
+
+    Comme j'ai répété certaines classes sur plusieurs pages
+    pour des raisons de cohérence esthétique 
+    (comme par exemple la classe divResultImage),
+    j'ai ajouté dans le code HTML des classes numérotés
+    (comme divResultImage1 et divResultImage2)
+    pour les différencier dans ces media querries
+
+*/
+
+
+/*----------------------
+    La navbar
+----------------------*/
+
+@media screen and (max-width: 1600px) {
+  .searchNavbar {
+    width: 70vw;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .searchNavbar {
+    width: 60vw;
+  }
+}
+
+/*La version mobile de la navbar*/
+
+@media screen and (max-width: 900px) {
+  .searchNavbar, .glass {
+    display: none;
+  }
+}
+
+/*----------------------
+    La page d'accueil
+----------------------*/
+
+@media screen and (max-width: 1200px) {
+  .catchphrase {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .catchphrase {
+    font-size: 1.6rem;
+    width: 60vw;
+  }
+}
+
+/*La version mobile de la catchphrase*/
+
+@media screen and (max-width: 900px) {
+  .catchphrase {
+    font-size: 1.4rem;
+  }
+}
+
+/* Pour le carroussel*/
+
+@media screen and (max-width: 900px) {
+
+  .carouselImage2 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+/*----------------------
+    La page Results
+----------------------*/
+
+/*Version mobile*/
+
+@media screen and (max-width: 1100px) {
+  
+  .result {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .divResultImage1 {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+  }
+
+  .resultImage {
+    width: 28vw;
+    min-width: 300px;
+  }
+
+  .seriesName {
+    text-align: center;
+    margin-top: 1.4rem;
+  }
+
+  .seriesSummary {
+    font-size: 1.1rem;
+  }
+
+  .buttonDetailsSeries {
+    margin-bottom: 1rem;
+  }
+
+}
+
+/*pour les très petits écrans*/
+
+@media screen and (max-width: 600px) {
+  .seriesSummary {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+
+/*----------------------
+    La page Série
+----------------------*/
+
+
+@media screen and (max-width: 1100px) {
+
+  .divResultImage2 {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+  }
+
+  .titreSeries {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ratings {
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .seriesSummary {
+    margin-top: 1.4rem;
+  }
+
+  .FavoritesButtonToRight {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .result2 {
+    margin-bottom: 3rem;
+  }
+}
+
+/*Responsibilité de la liste des acteurs*/
+
+@media screen and (max-width: 1750px) {
+    .actorList {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1370px) {
+  .actorList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .actorList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Responsibilité des épisodes*/
+
+@media screen and (max-width: 1000px) {
+
+  .divResultImage3 {
+    display: none;
+  }
+
+  .menuDeroulant {
+    width: 60vw;
+    margin: auto;
+  }
+
+}
+
+/*----------------------
+    La page Acteur
+----------------------*/
+
+
+@media screen and (max-width: 1350px) {
+
+  .result3 {
+    display: grid;
+    grid-template-columns: 1;
+  }
+
+  .divResultImage4 {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+
+    margin-bottom: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .actorResultSection {
+    margin: 5rem auto;
+  }
+
+
+  .result3 {
+    padding: 2rem 0 3.5rem 0;
+  }
+
+  .roleLineComponent, .seriesLineComponent {
+    margin: 0.3rem auto 0.5rem auto;
+  }
+
+  .divInfosSeriesComponent {
+    display: grid;
+    grid-template-columns: 1;
+  }
+
+  .divImageSeriesComponent {
+    margin: 0.3rem auto 0.8rem auto;
+  }
+
+  .h3SeriesInfoComponent {
+    margin: 1.2rem 4rem;
+  }
+
+  .buttonInfosSeriesComponent {
+    margin: 0 0 2.3rem 4rem;
+  }
+
+  .premiereSeriesComponent, .endSeriesComponent, .summarySeriesComponent, .genresComponent {
+    font-size: 1.2rem;
+    margin: 1.7rem 4rem;
+  }
+
+  .summarySeriesComponent {
+    text-align: justify;
+  }
+
+  .actorImageRoleComponent, .actorImageSeriesComponent {
+      min-width: 200px;
+      max-width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .summarySeriesComponent {
+    padding-right: 1rem;
+  }
+}
+
+/*----------------------
+    Le footer
+----------------------*/
+
+@media screen and (max-width: 700px) {
+
+  footer > p {
+    font-size: 0.9rem;
+  }
+}
